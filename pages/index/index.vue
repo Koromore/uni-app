@@ -25,7 +25,6 @@
 			IndexNav,
 			IndexAdvertising1,
 			IndexProductlist,
-			
 			IndexAdvertising2
 		},
 		data() {
