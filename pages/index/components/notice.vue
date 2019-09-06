@@ -3,7 +3,8 @@
 		<view class="left">
 			公告
 		</view>
-		<swiper class="swiper2" :indicator-dots="false" :autoplay="autoplay" :interval="interval" :duration="duration" :circular="circular" vertical="true">
+		<swiper class="swiper2" :indicator-dots="false" :autoplay="autoplay" :interval="interval" :duration="duration"
+		 :circular="circular" vertical="true">
 			<swiper-item>
 				<view class="swiper-item">
 					新闻1
@@ -41,28 +42,28 @@
 
 <style>
 	/* @import url("Uni-app/uni.scss"); */
-	.notice{
+	.notice {
 		width: 750upx;
 		display: flex;
 		flex-wrap: wrap;
 		background: #FFFFFF;
 	}
-	
+
 	.swiper2 {
 		width: 640upx;
 		height: 64upx;
 	}
-	
-	.swiper2 swiper-item{
+
+	.swiper2 swiper-item {
 		width: 640rpx;
 		color: red;
 	}
-	
-	.swiper2 swiper-item view{
+
+	.swiper2 swiper-item view {
 		line-height: 64upx;
 	}
-	
-	.left{
+
+	.left {
 		width: 110upx;
 		line-height: 64upx;
 	}

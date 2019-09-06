@@ -1,0 +1,9 @@
+
+.advertising{
+	width: 750rpx;
+	margin-top: 24rpx;
+}
+.advertising .advertising_img{
+	width: 750rpx;
+}
+

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "产品",
+  "usingComponents": {
+    "product-header": "/pages/product/components/header",
+    "product-seek": "/pages/product/components/seek",
+    "product-list": "/pages/product/components/list"
+  }
+}

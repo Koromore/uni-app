@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "index-banner": "/pages/index/components/banner",
+    "index-notice": "/pages/index/components/notice",
+    "index-nav": "/pages/index/components/nav",
+    "index-advertising1": "/pages/index/components/advertising1",
+    "index-productlist": "/pages/index/components/productlist",
+    "index-advertising2": "/pages/index/components/advertising2"
+  }
+}

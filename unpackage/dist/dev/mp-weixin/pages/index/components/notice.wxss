@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url("Uni-app/uni.scss"); */
+.notice {
+	width: 750rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	background: #FFFFFF;
+}
+.swiper2 {
+	width: 640rpx;
+	height: 64rpx;
+}
+.swiper2 swiper-item {
+	width: 640rpx;
+	color: red;
+}
+.swiper2 swiper-item view {
+	line-height: 64rpx;
+}
+.left {
+	width: 110rpx;
+	line-height: 64rpx;
+}
+

@@ -28,46 +28,46 @@
 
 <style lang="sass" scoped>
 	.product_list
-		width: 750upx;
+		width: 750upx
 	.title
-		width: 750upx;
-		height: 100upx;
-		text-align: center;
-		line-height: 100upx;
-		font-size: 28upx;
-		background: #FFFFFF url(http://hmj.cnyun365.com/static/img/title_bg.png) center center no-repeat;
-		background-size: 200upx;
-		margin-top: 24upx;
+		width: 750upx
+		height: 100upx
+		text-align: center
+		line-height: 100upx
+		font-size: 28upx
+		background: #FFFFFF url(http://hmj.cnyun365.com/static/img/title_bg.png) center center no-repeat
+		background-size: 200upx
+		margin-top: 24upx
 	.product_box
-		width: 750upx;
-		display: flex;
-		flex-wrap: wrap;
+		width: 750upx
+		display: flex
+		flex-wrap: wrap
 		.product
-			width: 48%;
-			box-sizing: border-box;
-			padding: 18upx;
-			margin: 1%;
-			background: #FFFFFF;
+			width: 48%
+			box-sizing: border-box
+			padding: 18upx
+			margin: 1%
+			background: #FFFFFF
 			.img
-				width: 100%;
+				width: 100%
 			.text
-				text-align: center;
-				font-size: 28upx;
+				text-align: center
+				font-size: 28upx
 	.more
-		width: 750upx;
-		height: 100upx;
-		background: #FFFFFF;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
+		width: 750upx
+		height: 100upx
+		background: #FFFFFF
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
 		.more_text
-			width: 180upx;
-			height: 60upx;
-			color: #FFFFFF;
-			text-align: center;
-			background: #8b562a;
-			border-radius: 16rpx;
-			font-size: 28upx;
-			line-height: 60upx;
+			width: 180upx
+			height: 60upx
+			color: #FFFFFF
+			text-align: center
+			background: #8b562a
+			border-radius: 16rpx
+			font-size: 28upx
+			line-height: 60upx
 </style>

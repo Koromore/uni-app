@@ -1,0 +1,27 @@
+
+.swiper {
+	width: 750rpx;
+	height: 464rpx;
+}
+.notice {
+	width: 750rpx;
+	height: 64rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.left {
+	width: 110rpx;
+	line-height: 64rpx;
+}
+
+/* swiper-item 里面的图片高度 */
+swiper-item image {
+	width: 100%;
+	height: 464rpx;
+}
+

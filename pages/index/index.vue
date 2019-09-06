@@ -15,12 +15,12 @@
 	import IndexNav from './components/nav.vue'
 	import IndexAdvertising1 from './components/advertising1.vue'
 	import IndexProductlist from './components/productlist.vue'
-	
+
 	import IndexAdvertising2 from './components/advertising2.vue'
 	export default {
 		name: 'Index',
 		components: {
-		  IndexBanner,
+			IndexBanner,
 			IndexNotice,
 			IndexNav,
 			IndexAdvertising1,
@@ -28,29 +28,28 @@
 			IndexAdvertising2
 		},
 		data() {
-			return {
-			}
+			return {}
 		},
 		onLoad() {
-			// console.log("123")
-			// uni.request({
-			// 	url: 'https://xcx.hmj319.cn/api/Config/getIndexConfig', //仅为示例，并非真实接口地址。
-			// 	data: {
-			// 		// text: 'uni.request'
-			// 	},
-			// 	method: 'POST',
-			// 	header: {
-			// 		'custom-header': 'application/json' //自定义请求头信息
-			// 	},
-			// 	success: (res) => {
-			// 		console.log(res.data);
-			// 		// this.text = 'request success';
-			// 		this.banner = res.data.banner;
-			// 		this.productType = res.data.proType;
-			// 		this.advList = res.data.advList;
-			// 		this.productList = res.data.productList;
-			// 	}
-			// });
+			console.log("123")
+			uni.request({
+				url: '/api/Config/getIndexConfig', //仅为示例，并非真实接口地址。
+				data: {
+					// text: 'uni.request'
+				},
+				// method: 'POST',
+				// header: {
+				// 	'custom-header': 'application/json' //自定义请求头信息
+				// },
+				success: (res) => {
+					console.log(res.data)
+					// this.text = 'request success'
+					this.banner = res.data.banner
+					this.productType = res.data.proType
+					this.advList = res.data.advList
+					this.productList = res.data.productList
+				}
+			});
 		},
 		methods: {
 
