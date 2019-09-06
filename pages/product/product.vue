@@ -53,7 +53,7 @@ export default {
 
 <style lang="sass" scoped>
 uni-page-body
-	height: 100%;
+	height: 100%
 	.content
-		height: 100%;
+		height: 100%
 </style>
