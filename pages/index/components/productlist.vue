@@ -2,12 +2,8 @@
 	<div class="product_list">
 		<div class="title">精品推荐</div>
 		<div class="product_box">
-			<div class="product">
-				<img class="img" src="/static/images/product/1.png" mode="widthFix"/>
-				<div class="text">产品名称</div>
-			</div>
-			<div class="product">
-				<img class="img" src="/static/images/product/2.jpg" mode="widthFix"/>
+			<div class="product" v-for="(item, index) in productList" :key="index">
+				<img class="img" :src="'/static/images/product/'+index+'.png'" mode="widthFix"/>
 				<div class="text">产品名称</div>
 			</div>
 		</div>
@@ -22,6 +18,9 @@
 		name: 'IndexProductlist',
 		data() {
 			return {}
+		},
+		props: {
+			productList: Array
 		},
 	}
 </script>

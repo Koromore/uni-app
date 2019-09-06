@@ -80,27 +80,27 @@ export default {
 
 <style lang="sass" scoped>
 .list
-	width: 750upx;
-	display: flex;
-	flex-wrap: wrap;
+	width: 750upx
+	display: flex
+	flex-wrap: wrap
 	.title_box
-		width: 187.5upx;
-		display: flex;
-		flex-wrap: wrap;
+		width: 187.5upx
+		display: flex
+		flex-wrap: wrap
 		.title
-			width: 100%;
-			height: 81upx;
-			line-height: 81upx;
-			font-size: 30upx;
-			text-align: center;
+			width: 100%
+			height: 81upx
+			line-height: 81upx
+			font-size: 30upx
+			text-align: center
 		.activ
-			background: red;
+			background: red
 	.list_box
-		width: 562.5upx;
-		background: red;
+		width: 562.5upx
+		background: red
 		.swiper
-			height: 100%;
+			height: 100%
 			.swiper-item
-				height: 100%;
-				background: blue;
+				height: 100%
+				background: blue
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="advertising">
-		<img class="advertising_img" src="/static/images/advertising/1.jpg" mode="widthFix" />
+		<img class="advertising_img" :src="advertisingImg" mode="widthFix" />
 	</div>
 </template>
 
@@ -11,14 +11,16 @@
 			return {
 			}
 		},
+		props: {
+			advertisingImg: String
+		},
 	}
 </script>
 
 <style lang="sass" scoped>
 	.advertising
-		width: 750upx;
-		margin-top: 24upx;
+		width: 750upx
+		margin-top: 24upx
 		.advertising_img
-			width: 750upx;
-	
+			width: 750upx
 </style>

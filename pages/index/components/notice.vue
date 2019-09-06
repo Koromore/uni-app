@@ -40,31 +40,23 @@
 	}
 </script>
 
-<style>
+<style lang="sass" scoped>
 	/* @import url("Uni-app/uni.scss"); */
-	.notice {
-		width: 750upx;
-		display: flex;
-		flex-wrap: wrap;
-		background: #FFFFFF;
-	}
-
-	.swiper2 {
-		width: 640upx;
-		height: 64upx;
-	}
-
-	.swiper2 swiper-item {
-		width: 640rpx;
-		color: red;
-	}
-
-	.swiper2 swiper-item view {
-		line-height: 64upx;
-	}
-
-	.left {
-		width: 110upx;
-		line-height: 64upx;
-	}
+	.notice 
+		width: 750upx
+		display: flex
+		flex-wrap: wrap
+		background: #FFFFFF
+		.left
+			width: 110upx
+			line-height: 64upx
+		.swiper2 
+			width: 640upx
+			height: 64upx
+			swiper-item 
+				width: 640rpx
+				color: red
+				view 
+					line-height: 64upx
+					
 </style>
