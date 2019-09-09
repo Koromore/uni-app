@@ -3,7 +3,7 @@
 		<div class="title">精品推荐</div>
 		<div class="product_box">
 			<div class="product" v-for="(item, index) in productList" :key="index">
-				<img class="img" :src="'/static/images/product/'+index+'.png'" mode="widthFix"/>
+				<img class="img" :src="imgPr + item.img[0]" mode="widthFix"/>
 				<div class="text">产品名称</div>
 			</div>
 		</div>
@@ -17,7 +17,9 @@
 	export default {
 		name: 'IndexProductlist',
 		data() {
-			return {}
+			return {
+				imgPr: 'https://xcx.hmj319.cn/upload/'
+			}
 		},
 		props: {
 			productList: Array

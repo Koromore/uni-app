@@ -16,14 +16,7 @@
         },
         "devServer" : {
             "port" : 8000,
-            "disableHostCheck" : true,
-            "proxy" : {
-                "/api" : {
-                    "target" : "https://xcx.hmj319.cn/api",
-                    "changeOrigin" : true,
-                    "secure" : false
-                }
-            }
+            "disableHostCheck" : true
         },
         /* 模块配置 */
         "modules" : {},

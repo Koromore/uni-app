@@ -47,16 +47,18 @@ export default {
 			duration: 500,
 			currentTab: 0,
 			height: 100,
-			titlelist: [1, 2, 3, 4, 5, 6, 7, 8]
+			titlelist: [1, 2, 3, 4, 5, 6]
 		};
 	},
 	methods: {
 		current(e) {
 			this.currentTab = e.currentTarget.dataset.current;
+			console.log(e.currentTarget.dataset.current)
 		},
 		test(e) {
 			// console.log(e.detail.current);
 			this.currentTab = e.detail.current;
+			console.log(e.detail.current)
 		}
 	},
 	// onShow() {

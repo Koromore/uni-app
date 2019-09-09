@@ -1,19 +1,26 @@
 <template>
 	<div class="advertising">
-		<img class="advertising_img" :src="advertisingImg" mode="widthFix" />
+		<image class="advertising_img" :src="imgPr + advList[0].img" mode="widthFix" /></image>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'IndexAdvertising1',
+		name: 'IndexAdvertising',
 		data() {
 			return {
+				imgPr: 'https://xcx.hmj319.cn/upload/'
 			}
 		},
 		props: {
-			advertisingImg: String
+			advList: Object
 		},
+		methods: {
+			
+		},
+		mounted() {
+			console.log(this.advList)
+		}
 	}
 </script>
 

@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var ProductHeader = function ProductHeader() {return __webpack_require__.e(/*! import() | pages/product/components/header */ "pages/product/components/header").then(__webpack_require__.bind(null, /*! ./components/header.vue */ 81));};var ProductSeek = function ProductSeek() {return __webpack_require__.e(/*! import() | pages/product/components/seek */ "pages/product/components/seek").then(__webpack_require__.bind(null, /*! ./components/seek.vue */ 88));};var ProductList = function ProductList() {return __webpack_require__.e(/*! import() | pages/product/components/list */ "pages/product/components/list").then(__webpack_require__.bind(null, /*! ./components/list.vue */ 95));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _name$components$data;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var ProductHeader = function ProductHeader() {return __webpack_require__.e(/*! import() | pages/product/components/header */ "pages/product/components/header").then(__webpack_require__.bind(null, /*! ./components/header.vue */ 74));};var ProductSeek = function ProductSeek() {return __webpack_require__.e(/*! import() | pages/product/components/seek */ "pages/product/components/seek").then(__webpack_require__.bind(null, /*! ./components/seek.vue */ 81));};var ProductList = function ProductList() {return __webpack_require__.e(/*! import() | pages/product/components/list */ "pages/product/components/list").then(__webpack_require__.bind(null, /*! ./components/list.vue */ 88));};var _default = (_name$components$data = {
 
 
 
@@ -119,7 +119,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-{
+
   name: 'Product',
   components: {
     ProductHeader: ProductHeader,
@@ -144,16 +144,41 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     this.contentHeight = contentHeight;
     this.headertHeight = headertHeight;
     this.seekHeight = seekHeight;
-  },
-  methods: {
-    /**
-              * 点击segmentedControl 事件回调
-              */
-    onClickItem: function onClickItem(index) {
-      if (this.current !== index) {
-        this.current = index;
-      }
-    } } };exports.default = _default;
+  } }, _defineProperty(_name$components$data, "onLoad", function onLoad()
+{var _this = this;
+  // console.log("123")
+  uni.request({
+    url: 'https://xcx.hmj319.cn/api/product/getProductList', //仅为示例，并非真实接口地址。
+    data: {
+      id: '9' },
+
+    method: 'POST',
+    header: {
+      'custom-header': 'application/json' //自定义请求头信息
+    },
+    success: function success(res) {
+      // console.log(res.data)
+      // this.text = 'request success'
+      _this.banner = res.data.banner;
+      _this.productType = res.data.proType;
+      _this.advList = res.data.advList;
+      _this.productList = res.data.productList;
+      // console.log(this.banner)
+      // console.log(this.text)
+      // console.log(typeof(this.advList))
+    } });
+
+}), _defineProperty(_name$components$data, "methods",
+{
+  /**
+   * 点击segmentedControl 事件回调
+   */
+  onClickItem: function onClickItem(index) {
+    if (this.current !== index) {
+      this.current = index;
+    }
+  } }), _name$components$data);exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

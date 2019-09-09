@@ -120,16 +120,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
 var _default =
 {
   name: 'IndexProductlist',
   data: function data() {
-    return {};
-  } };exports.default = _default;
+    return {
+      imgPr: 'https://xcx.hmj319.cn/upload/' };
+
+  },
+  props: {
+    productList: Array } };exports.default = _default;
 
 /***/ }),
 

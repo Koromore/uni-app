@@ -4,7 +4,7 @@
 		 :circular="circular">
 			<swiper-item v-for="(item, index) in banner" :key="index">
 				<view class="swiper-item">
-					<image :src="'/static/images/banner/'+index+'.jpg'" mode="aspectFill"></image>
+					<image :src="imgPr + item.img" mode="aspectFill"></image>
 				</view>
 			</swiper-item>
 		</swiper>
@@ -26,7 +26,7 @@
 				circular: true,
 				interval: 2000,
 				duration: 500,
-				imgPr: "https://xcx.hmj319.cn/images/"
+				imgPr: "http://hmj.cnyun365.com/upload/"
 			}
 		},
 		onLoad() {

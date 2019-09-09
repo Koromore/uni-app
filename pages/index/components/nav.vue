@@ -1,7 +1,7 @@
 <template>
 	<div class="nav">
 		<div class="nav_list"  v-for="(item, index) in productType" :key="index">
-			<img class="img" :src="'/static/images/nav/'+index+'.jpg'" mode="aspectFill"/>
+			<img class="img" :src="imgPr + item.cover" mode="aspectFill"/>
 			<div class="nav_text">{{item.type_name}}</div>
 		</div>
 	</div>
@@ -12,6 +12,7 @@
 		name: 'IndexNav',
 		data() {
 			return {
+				imgPr: 'https://xcx.hmj319.cn/upload/'
 			}
 		},
 		props: {

@@ -112,8 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexBanner = function IndexBanner() {return __webpack_require__.e(/*! import() | pages/index/components/banner */ "pages/index/components/banner").then(__webpack_require__.bind(null, /*! ./components/banner.vue */ 39));};var IndexNotice = function IndexNotice() {return __webpack_require__.e(/*! import() | pages/index/components/notice */ "pages/index/components/notice").then(__webpack_require__.bind(null, /*! ./components/notice.vue */ 46));};var IndexNav = function IndexNav() {return __webpack_require__.e(/*! import() | pages/index/components/nav */ "pages/index/components/nav").then(__webpack_require__.bind(null, /*! ./components/nav.vue */ 53));};var IndexAdvertising1 = function IndexAdvertising1() {return __webpack_require__.e(/*! import() | pages/index/components/advertising1 */ "pages/index/components/advertising1").then(__webpack_require__.bind(null, /*! ./components/advertising1.vue */ 60));};var IndexProductlist = function IndexProductlist() {return __webpack_require__.e(/*! import() | pages/index/components/productlist */ "pages/index/components/productlist").then(__webpack_require__.bind(null, /*! ./components/productlist.vue */ 67));};var IndexAdvertising2 = function IndexAdvertising2() {return __webpack_require__.e(/*! import() | pages/index/components/advertising2 */ "pages/index/components/advertising2").then(__webpack_require__.bind(null, /*! ./components/advertising2.vue */ 74));};var _default =
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexBanner = function IndexBanner() {return __webpack_require__.e(/*! import() | pages/index/components/banner */ "pages/index/components/banner").then(__webpack_require__.bind(null, /*! ./components/banner.vue */ 39));};var IndexNotice = function IndexNotice() {return __webpack_require__.e(/*! import() | pages/index/components/notice */ "pages/index/components/notice").then(__webpack_require__.bind(null, /*! ./components/notice.vue */ 46));};var IndexNav = function IndexNav() {return __webpack_require__.e(/*! import() | pages/index/components/nav */ "pages/index/components/nav").then(__webpack_require__.bind(null, /*! ./components/nav.vue */ 53));};var IndexAdvertising = function IndexAdvertising() {return __webpack_require__.e(/*! import() | pages/index/components/advertising */ "pages/index/components/advertising").then(__webpack_require__.bind(null, /*! ./components/advertising.vue */ 60));};var IndexProductlist = function IndexProductlist() {return __webpack_require__.e(/*! import() | pages/index/components/productlist */ "pages/index/components/productlist").then(__webpack_require__.bind(null, /*! ./components/productlist.vue */ 67));};var _default =
 
 
 
@@ -137,31 +136,38 @@ __webpack_require__.r(__webpack_exports__);
     IndexBanner: IndexBanner,
     IndexNotice: IndexNotice,
     IndexNav: IndexNav,
-    IndexAdvertising1: IndexAdvertising1,
-    IndexProductlist: IndexProductlist,
-    IndexAdvertising2: IndexAdvertising2 },
+    IndexAdvertising: IndexAdvertising,
+    IndexProductlist: IndexProductlist },
 
   data: function data() {
-    return {};
+    return {
+      banner: [],
+      productType: [],
+      productList: [],
+      advList: {} };
+
   },
   onLoad: function onLoad() {var _this = this;
-    console.log("123");
+    // console.log("123")
     uni.request({
-      url: '/api/Config/getIndexConfig', //仅为示例，并非真实接口地址。
+      url: 'https://xcx.hmj319.cn/api/Config/getIndexConfig', //仅为示例，并非真实接口地址。
       data: {
         // text: 'uni.request'
       },
-      // method: 'POST',
-      // header: {
-      // 	'custom-header': 'application/json' //自定义请求头信息
-      // },
+      method: 'POST',
+      header: {
+        'custom-header': 'application/json' //自定义请求头信息
+      },
       success: function success(res) {
-        console.log(res.data);
+        // console.log(res.data)
         // this.text = 'request success'
         _this.banner = res.data.banner;
         _this.productType = res.data.proType;
         _this.advList = res.data.advList;
         _this.productList = res.data.productList;
+        // console.log(this.banner)
+        // console.log(this.text)
+        console.log(typeof _this.advList);
       } });
 
   },

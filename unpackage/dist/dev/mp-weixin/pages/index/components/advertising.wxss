@@ -24,11 +24,11 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.advertising.data-v-12fb42af {
+.advertising.data-v-7264051c {
   width: 750rpx;
   margin-top: 24rpx;
 }
-.advertising .advertising_img.data-v-12fb42af {
+.advertising .advertising_img.data-v-7264051c {
     width: 750rpx;
 }
 

@@ -26,8 +26,8 @@
 
 <style lang="sass" scoped>
 	.advertising
-		width: 750upx;
-		height: 300upx;
+		width: 750upx
+		height: 300upx
 		.advertising_img
-			width: 750upx;
+			width: 750upx
 </style>

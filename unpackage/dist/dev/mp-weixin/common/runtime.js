@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/index/components/advertising1":1,"pages/index/components/advertising2":1,"pages/index/components/banner":1,"pages/index/components/nav":1,"pages/index/components/notice":1,"pages/index/components/productlist":1,"pages/product/components/header":1,"pages/product/components/list":1,"pages/product/components/seek":1};
+/******/ 		var cssChunks = {"pages/index/components/advertising":1,"pages/index/components/banner":1,"pages/index/components/nav":1,"pages/index/components/notice":1,"pages/index/components/productlist":1,"pages/product/components/header":1,"pages/product/components/list":1,"pages/product/components/seek":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"pages/index/components/advertising1":"pages/index/components/advertising1","pages/index/components/advertising2":"pages/index/components/advertising2","pages/index/components/banner":"pages/index/components/banner","pages/index/components/nav":"pages/index/components/nav","pages/index/components/notice":"pages/index/components/notice","pages/index/components/productlist":"pages/index/components/productlist","pages/product/components/header":"pages/product/components/header","pages/product/components/list":"pages/product/components/list","pages/product/components/seek":"pages/product/components/seek"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"pages/index/components/advertising":"pages/index/components/advertising","pages/index/components/banner":"pages/index/components/banner","pages/index/components/nav":"pages/index/components/nav","pages/index/components/notice":"pages/index/components/notice","pages/index/components/productlist":"pages/index/components/productlist","pages/product/components/header":"pages/product/components/header","pages/product/components/list":"pages/product/components/list","pages/product/components/seek":"pages/product/components/seek"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

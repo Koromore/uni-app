@@ -38,6 +38,30 @@ export default {
 		this.headertHeight = headertHeight
 		this.seekHeight = seekHeight
 	},
+	onLoad() {
+		// console.log("123")
+		uni.request({
+			url: 'https://xcx.hmj319.cn/api/product/getProductList', //仅为示例，并非真实接口地址。
+			data: {
+				id: '9'
+			},
+			method: 'POST',
+			header: {
+				'custom-header': 'application/json' //自定义请求头信息
+			},
+			success: (res) => {
+				// console.log(res.data)
+				// this.text = 'request success'
+				this.banner = res.data.banner
+				this.productType = res.data.proType
+				this.advList = res.data.advList
+				this.productList = res.data.productList
+				// console.log(this.banner)
+				// console.log(this.text)
+				// console.log(typeof(this.advList))
+			}
+		});
+	},
 	methods: {
 		/**
 		 * 点击segmentedControl 事件回调

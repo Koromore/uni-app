@@ -4,8 +4,7 @@
     "index-banner": "/pages/index/components/banner",
     "index-notice": "/pages/index/components/notice",
     "index-nav": "/pages/index/components/nav",
-    "index-advertising1": "/pages/index/components/advertising1",
-    "index-productlist": "/pages/index/components/productlist",
-    "index-advertising2": "/pages/index/components/advertising2"
+    "index-advertising": "/pages/index/components/advertising",
+    "index-productlist": "/pages/index/components/productlist"
   }
 }

@@ -3,9 +3,9 @@
 		<index-banner :banner='banner'></index-banner>
 		<index-notice></index-notice>
 		<index-nav :productType='productType'></index-nav>
-		<index-advertising :advertisingImg='advertisingImg1'></index-advertising>
+		<index-advertising :advList='advList[1]'></index-advertising>
 		<index-productlist :productList='productList'></index-productlist>
-		<index-advertising :advertisingImg='advertisingImg2'></index-advertising>
+		<index-advertising :advList='advList[2]'></index-advertising>
 	</view>
 </template>
 
@@ -30,8 +30,7 @@
 				banner: [],
 				productType: [],
 				productList: [],
-				advertisingImg1: '/static/images/advertising/1.jpg',
-				advertisingImg2: '/static/images/advertising/2.jpg'
+				advList: {}
 			}
 		},
 		onLoad() {
@@ -54,6 +53,7 @@
 					this.productList = res.data.productList
 					// console.log(this.banner)
 					// console.log(this.text)
+					console.log(typeof(this.advList))
 				}
 			});
 		},
